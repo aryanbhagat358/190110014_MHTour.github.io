@@ -1,0 +1,378 @@
+/* NAVIGATION TAB  */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+/* navbar */
+#navbar {
+   /* background-color:white; */
+   /* opacity: .3; */
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+   position: relative;
+   top: 10px;
+   left: 50px;
+   height: 40px;
+
+}
+
+#navbar::before {
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+   top: 0px;
+   left: 0px;
+}
+
+/* navbar logo  */
+#logo {
+   margin: 10px 20px;
+}
+
+#logo img {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 50px;
+   margin: 5px 10px;
+}
+
+/* navbar list  */
+#navbar ul {
+   display: flex;
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+#navbar ul li {
+   list-style: none;
+   font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+   color: white;
+   border: 1px solid white;
+   
+   display: block;
+   padding: 5px 20px;
+   margin: auto 10px;
+   text-decoration: none;
+   border-radius: 5px;
+   transition-property: all;
+   transition-duration: .5s;
+   /* transition-delay: .2s; */
+   transition-timing-function: ease-out;
+
+}
+
+#navbar ul li a:hover {
+   color: black;
+   background-color: rgb(198, 253, 185);
+
+
+}
+
+/* HOME  */
+ /* Home Section  */
+ /* div  */
+#home {
+    /* background-color: blue; */
+   display: flex;
+   flex-direction: column;
+   padding: 5px 100px;
+   height: 500px;
+   width: 550px;
+   justify-content: center;
+   /* justify-content: left; */
+   /* align-items: center; */
+   align-items: flex-start;
+   margin-bottom: 110px;
+   margin-top: 50px;
+   margin-left: 30px;
+   /* box-shadow: 10px 10px 10px white ; */
+   
+
+}
+
+#home::before {
+   /* background-color: blue; */
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background: url('https://images.unsplash.com/photo-1521206644285-8db1549e484f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80') no-repeat center center/cover;
+   /* height: 100%; */
+   height: 650px;
+   width: 100%;
+   z-index: -1;
+   opacity: .99;
+
+}
+
+#home p {
+color: white;
+   /* background-color:black; */
+   /* opacity: .4; */
+   font-size: 1.5rem;
+   text-align: justify;
+   /* text-align: center; */
+   font-family: sans-serif;
+   text-shadow: 3px 3px 2px black;
+
+}
+.h1section {
+   color: rgb(171, 241, 194);
+   font-size: 4rem;
+   padding: 10px 10px;
+   text-align: center;
+   font-family: 'Anton', sans-serif;
+   text-shadow: 4px 4px 2px black;
+
+
+}
+
+
+.btn {
+   padding: 8px 20px;
+   background-color: brown;
+   color: white;
+   border: white;
+   margin-top: 30px;
+   font-size: 1.3rem;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+/* SERVICES */
+#services {
+   /* background-color: blue; */
+   display: flex;
+   margin: 20px 200px;
+   /* width: 100%; */
+   justify-content: center;
+   align-items: center;
+
+}
+
+#services .box {
+   border: 2px solid brown;
+   background-color: rgb(238, 238, 238);
+   padding: 20px;
+   margin: 15px;
+   border-radius: 25px;
+   box-shadow: 3px 3px 2px brown;
+
+
+}
+
+#services .box img {
+
+   height: 70px;
+   display: block;
+   margin: 10px auto;
+
+
+
+}
+
+/* DESTINATION  */
+/* display: flex;
+   flex-direction: column;
+   padding: 5px 100px;
+   height: 500px;
+   width: 400px;
+   justify-content: center;
+   /* justify-content: left; */
+   /* align-items: center; */
+   /* align-items: flex-start;
+   margin-bottom: 110px; */
+
+.destination {
+   /* background-color: blue; */
+   display: flex;
+   
+   margin: 20px 200px;
+   padding: 20px;
+   /* width: 100%; */
+   justify-content:center;
+   align-items: center;
+
+}
+
+.destination2 {
+   /* background-color: blue; */
+   display: flex;
+   margin: 20px 200px;
+   /* width: 100%; */
+   justify-content: center;
+   align-items: center;
+
+}
+
+.destination.destbox {
+   border: 2px solid brown;
+   background-color: rgb(238, 238, 238);
+   padding: 20px;
+   margin: 15px 25px;
+   border-radius: 25px;
+   width: 200px;
+   height: 300px;
+}
+
+.destination2.destbox2 {
+   border: 2px solid brown;
+   background-color: rgb(238, 238, 238);
+   padding: 20px;
+   margin: 15px 25px;
+   border-radius: 25px;
+   width: 200px;
+   height: 300px;
+}
+
+
+
+#dbox1 {
+   background: url('https://img.traveltriangle.com/blog/wp-content/uploads/2018/01/FotoJet6592thfyg.jpg') no-repeat center center;
+   width: 30%;
+   height: 400px;
+   margin: 20px;} 
+   #dbox1:hover{
+      animation-name: ab;
+      animation-duration: 2.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: initial;
+   
+   }
+
+
+
+
+
+
+#dbox2 {
+   background: url('https://toib.b-cdn.net/wp-content/uploads/2017/10/Panchgani.jpg') no-repeat center center;
+   width: 30%;
+   height: 400px;
+   margin: 20px;
+}
+#dbox2:hover{
+   animation-name: ab;
+   animation-duration: 2.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: initial;
+
+}
+
+#dbox3 {
+   background: url('https://toib.b-cdn.net/wp-content/uploads/2017/10/lion-point.jpg') no-repeat center center;
+   width: 30%;
+   height: 400px;
+   margin: 20px;
+}
+#dbox3:hover{
+   animation-name: ab;
+   animation-duration: 2.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: initial;
+
+}
+@keyframes ab{
+   0%{
+   width: 30%;
+   height: 400px;
+   margin:20px;
+   }50%{
+      width: 40%;
+      height: 430px;
+      margin:25px;
+   }100%{
+   width: 30%;
+   height: 400px;
+   margin:20px;
+   }
+}
+
+#dbox4 {
+   background: url('https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/01/1200px-Raigad_fort_towers.jpg') no-repeat center center;
+   width: 50%;
+   height: 400px;
+   margin: 20px;
+}
+#dbox4:hover{
+   animation-name: ab1;
+   animation-duration: 2.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: initial;
+
+}
+
+#dbox5 {
+   background: url('https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/01/Pratapgad-Fort-kb6592.jpg') no-repeat center center;
+   width: 50%;
+   height: 400px;
+   margin: 20px;
+}
+#dbox5:hover{
+   animation-name: ab1;
+   animation-duration: 2.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: initial;
+
+}
+@keyframes ab1{
+   0%{
+   width: 50%;
+   height: 400px;
+   margin:20px;
+   }50%{
+      width: 60%;
+      height: 430px;
+      margin:25px;
+   }100%{
+   width: 50%;
+   height: 400px;
+   margin:20px;
+   }
+}
+
+#dbox6 {
+   background: url('https://toib.b-cdn.net/wp-content/uploads/2017/10/gateway-of-India.jpg') no-repeat center center;
+   /* background-color: blue; */
+   width: 100%;
+   height: 400px;
+   margin: 20px;
+}
+#dbox6:hover{
+   animation-name: ab2;
+   animation-duration: 2.5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: initial;
+
+}@keyframes ab2{
+   0%{
+   width: 100%;
+   height: 400px;
+   margin:20px;
+   }50%{
+      width: 1000px;
+      height: 430px;
+      margin:25px;
+   }100%{
+   width: 100%;
+   height: 400px;
+   margin:20px;
+   }
+}
+
+.h1destination {
+   font-size: 2.5rem;
+   margin: 40px 5px;
+}
